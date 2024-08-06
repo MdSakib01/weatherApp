@@ -177,7 +177,8 @@ footer p{
     border-radius: 10px;
     height: 45%;
     width: 20%;
-    padding: 15px 10px;
+    padding: 0;
+    line-height: 22px;
 }
 footer{
     height: 20%;
