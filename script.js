@@ -15,7 +15,8 @@ async function getWeatherData(cityName){
 
    return await promise.json();
 }
-search_Btn.addEventListener("click",async()=>{
+
+ async function mainWork(){
     city_Name.innerText='searching..';
     city_temp.innerText='_ _';
     country_region.innerText='_ _';
@@ -33,5 +34,13 @@ search_Btn.addEventListener("click",async()=>{
     visibility.innerText=weatherResult.current.vis_km;
     feels_like.innerText=weatherResult.current.feelslike_c;
     locatTime.innerText=weatherResult.location.localtime;
+ }
+input_city.addEventListener("keyup" ,async(e)=>{
+    if(e.keyCode == '13'){
+      mainWork();
+    }
 
 });
+search_Btn.addEventListener("click",async()=>{
+    mainWork();
+})
