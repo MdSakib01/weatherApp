@@ -114,6 +114,7 @@ justify-content: space-evenly;
     height: 50%;
     width: 20%;
     padding: 10px;
+   line-height: 25px;
 }
 
 .time{
@@ -181,7 +182,7 @@ footer p{
     line-height: 22px;
 }
 footer{
-    height: 20%;
+    height: 21%;
 }
 }
 
